@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#75172c">
+  <meta name="description" content="Prototipo conceptual para Escuela de Español UDLA: práctica en contextos de Quito, una ruta intensiva internacional y seguimiento docente.">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Escuela de Español UDLA · Aula de práctica</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2375172c'/%3E%3Cpath d='M8 8v11a8 8 0 0 0 16 0V8h-4v11a4 4 0 0 1-8 0V8z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="academic.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir al contenido</a>
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar" aria-label="Menú principal">
+      <a class="brand" href="#inicio" data-view="home"><span class="brand-word">UDLA<span>.</span></span><span class="brand-school">Escuela de Español</span><span class="brand-place">QUITO · ECUADOR</span></a>
+      <p class="side-label" id="nav-label">TU APRENDIZAJE</p>
+      <nav id="navigation" aria-label="Secciones del aula"></nav>
+      <div class="sidebar-note"><span class="side-label">APRENDER EN CONTEXTO</span><p>El español que necesitas.<br>La ciudad que descubres.</p><span class="location" id="sidebar-context">Vida universitaria en Quito</span></div>
+      <div class="sidebar-bottom"><button class="side-link" data-action="about">Sobre la propuesta</button><span>Preparado por Miltu Studios</span></div>
+    </aside>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-start"><button class="icon-button mobile-menu" id="menu-button" aria-label="Abrir menú" aria-controls="sidebar" aria-expanded="false"><span data-icon="menu"></span></button><span class="topbar-title">Aula de práctica <span>/</span> <span id="breadcrumb">Mi aprendizaje</span></span><span class="demo-badge">Prototipo</span></div>
+        <div class="topbar-controls"><div class="role-switch" role="group" aria-label="Elegir experiencia"><button id="student-role" data-role="student" aria-pressed="true">Estudiante</button><button id="teacher-role" data-role="teacher" aria-pressed="false">Docente</button></div><div class="avatar" id="profile-avatar" aria-label="Alex, perfil ilustrativo">AL</div></div>
+      </header>
+      <main id="main" tabindex="-1">
+        <div class="page-heading"><div><div class="eyebrow" id="page-eyebrow">ESCUELA DE ESPAÑOL UDLA</div><h1 id="page-title">Tu español, paso a paso.</h1><p id="page-subtitle">Un espacio para practicar, reforzar tus conocimientos y avanzar con confianza.</p></div><label class="level-label" id="level-control">Nivel de práctica<select id="level-select"><option value="A2">A2 · Español cotidiano</option><option value="B1">B1 · Vida universitaria</option></select></label></div>
+        <div id="content"></div>
+        <footer class="footer"><span>Prototipo conceptual preparado por <b>Miltu Studios</b> para Escuela de Español UDLA.</span><button class="text-button" data-action="about">Datos ilustrativos · propuesta académica</button></footer>
+      </main>
+    </div>
+  </div>
+  <button class="mobile-shade" id="mobile-shade" aria-label="Cerrar menú" hidden></button>
+  <dialog id="practice-dialog" aria-labelledby="practice-title"><div class="dialog-top"><span id="practice-label" class="eyebrow"></span><button id="close-practice" class="icon-button" data-action="close-practice" aria-label="Cerrar actividad"><span data-icon="close"></span></button></div><div id="practice-content"></div></dialog>
+  <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span class="eyebrow" id="detail-label">PROPUESTA ACADÉMICA</span><button class="icon-button" data-action="close-detail" aria-label="Cerrar detalle"><span data-icon="close"></span></button></div><div id="detail-content"></div></dialog>
+  <dialog id="about-dialog" aria-labelledby="about-title"><div class="dialog-top"><span class="eyebrow">Miltu Studios · propuesta para UDLA</span><button class="icon-button" data-action="close-about" aria-label="Cerrar información"><span data-icon="close"></span></button></div><h2 id="about-title">Práctica entre clases. Información para enseñar.</h2><p>Este prototipo propone una experiencia con la identidad de Escuela de Español UDLA, orientada a la práctica del estudiante y al seguimiento del equipo académico.</p><div class="about-grid"><section><h3>Para el estudiante</h3><p>Una ruta breve con lectura, audio, ejercicios, escritura y práctica oral en situaciones de Quito.</p></section><section><h3>Para el docente</h3><p>Resultados por destreza, asignación de refuerzo y una bandeja de correcciones conectada con la experiencia del estudiante.</p></section><section><h3>Alcance de la demostración</h3><p>Los perfiles, resultados previos, fechas y clases son ficticios. Las acciones se guardan solo en este navegador. No hay acceso a datos de UDLA ni conexión activa a su entorno virtual.</p></section><section><h3>Revisión académica</h3><p>Las actividades son originales y conceptuales. El temario, la evaluación y los materiales finales se adaptarían con UDLA. Las guías automáticas no acreditan un nivel de idioma.</p></section></div><p class="source-note">Referencia de contexto: <a href="https://www.udla.edu.ec/en/centro-internacional/estudia-un-semestre-en-udla/" target="_blank" rel="noopener">Intercambio e intensivo de español · UDLA</a>. Práctica de referencia: <a href="https://examenes.cervantes.es/es/dele/examenes/a2" target="_blank" rel="noopener">DELE A2</a> y <a href="https://examenes.cervantes.es/es/dele/examenes/b1" target="_blank" rel="noopener">DELE B1</a>. Las muestras no reproducen un examen oficial.</p><div class="button-row"><button class="button" data-action="close-about">Explorar el aula</button><button class="text-button" data-action="reset">Reiniciar datos de demostración</button></div></dialog>
+  <dialog id="reset-dialog" aria-labelledby="reset-title"><h2 id="reset-title">¿Reiniciar los datos de demostración?</h2><p>Se borrarán las respuestas, comentarios y asignaciones creados aquí. Volverán los perfiles y resultados ilustrativos iniciales.</p><div class="button-row"><button class="button secondary" data-action="cancel-reset">Conservar mis cambios</button><button class="button" data-action="confirm-reset">Reiniciar</button></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="notice">Activa JavaScript para usar las actividades y el panel docente.</p></noscript>
+</body>
+</html>
